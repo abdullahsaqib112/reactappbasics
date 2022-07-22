@@ -33,13 +33,14 @@ jobs:
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install # will run `yarn install` command
-      - name: instll surge
+          
+      - name: install yarn
         run: yarn build
         
       - name: Install surge
-        run: npm install --global surge
+        run: npm install surge
         
       - name: deployment 
-        run: surge ./build abdullahsreactapp.surge.sh ${{secrets.surgetoken}}
+        run: surge ./build abdullahsaqibreactapp.surge.sh ${{secrets.surgetoken}}
         
         
