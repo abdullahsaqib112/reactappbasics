@@ -41,6 +41,6 @@ jobs:
         run: npm install surge
         
       - name: deployment 
-        run: surge ./build abdullahsaqibreactapp.surge.sh ${{secrets.surgetoken}}
+        run: surge ./build abdullahsaqibreactapp.surge.sh ${{secrets.SURGE-KEY}}
         
         
