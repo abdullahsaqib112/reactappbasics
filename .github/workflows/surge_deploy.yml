@@ -34,7 +34,7 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
           
-      
+      - name: yarn
         run: yarn run build
         
       - name: Install Surge
